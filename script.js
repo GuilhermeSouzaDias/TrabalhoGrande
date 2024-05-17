@@ -1,7 +1,7 @@
-import { trocarTema, verificarTema} from "./helpers/tema-helpers.js"
+import { trocarTema, verificarTema} from "./helpers/tema-helper.js" //certo
 
-const botaoTema = document.querySelector(".tema button")
-const body = document.querySelector("body")
+const botaoTema = document.querySelector(".tema button") //certo
+const body = document.querySelector("body") //certo
 
 botaoTema.addEventListener("click", () => {
     trocarTema(body, botaoTema)

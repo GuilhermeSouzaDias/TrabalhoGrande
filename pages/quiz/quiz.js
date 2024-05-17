@@ -32,7 +32,7 @@ async function buscarPerguntas() {
     const urlDados = "../../data.json"
 
    await fetch(urlDados).then(resposta => resposta.json()).then(dados => {
-        dados.quizes.forEach(dado =>{
+        dados.quizzes.forEach(dado =>{
             if (dado.title === assunto) {
                 quiz = dado
             }
@@ -108,7 +108,7 @@ function guardarResposta(evento) {
     resposta = evento.target.value
     idInputResposta = evento.target.id
 
-    const botaoEnviar = document.querySelector(".alternativa button")
+    const botaoEnviar = document.querySelector(".alternativas button")
     botaoEnviar.addEventListener("click", validarResposta)
 }
 

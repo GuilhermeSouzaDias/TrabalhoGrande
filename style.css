@@ -142,7 +142,7 @@ main {
     background: var(--bg-css);
 }
 
-.botao_favascript div{
+.botao_javascript div{
     background: var(--bg-javascript);
 }
 

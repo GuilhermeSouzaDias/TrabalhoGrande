@@ -1,5 +1,5 @@
-let tema  = "claro"
-
+let tema = "claro"
+//certo
 export function trocarTema(body, botaoTema) {
     if (localStorage.getItem("tema")) {
         tema = localStorage.getItem("tema")
@@ -9,16 +9,16 @@ export function trocarTema(body, botaoTema) {
     if (tema === "claro") {
         body.classList.add("escuro")
         localStorage.setItem("tema", "escuro")
-        botaoTema.style.JustifyContent = "flex-end"
+        botaoTema.style.justifyContent = "flex-end"
     } else {
         body.classList.remove("escuro")
         localStorage.setItem("tema", "claro")
-        botaoTema.style.JustifyContent = "flex-start"
+        botaoTema.style.justifyContent = "flex-start"
     }
 
 }
 
-
+//certo
 export function verificarTema(body, botaoTema) {
     if (localStorage.getItem("tema")){
         tema = localStorage.getItem("tema")
