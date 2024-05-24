@@ -27,7 +27,7 @@ export function verificarTema(body, botaoTema) {
 
     if (tema === "escuro") {
         body.classList.add("escuro")
-        botaoTema.style.JustifyContent = "flex-end"
+        botaoTema.style.justifyContent = "flex-end"
     }
         
 }
